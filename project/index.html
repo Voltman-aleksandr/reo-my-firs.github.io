@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Длинный сайт с анимациями</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 class="title">Длинный сайт с анимациями</h1>
+    <p class="subtitle">Каждый элемент взаимодействует и оживает!</p>
+  </header>
+
+  <main>
+    <!-- О сайте -->
+    <section class="card">
+      <h2 class="animated-header">О сайте</h2>
+      <p>Этот сайт полон анимаций, чтобы ты мог оценить, как взаимодействовать с элементами.</p>
+      <button class="btn" id="clickButton">Кликни меня</button>
+    </section>
+
+    <!-- Таймер -->
+    <section class="timer">
+      <h2>Обратный отсчёт</h2>
+      <p>До конца этого чудесного дня осталось:</p>
+      <div id="countdown" class="countdown"></div>
+    </section>
+
+    <!-- Галерея -->
+    <section class="gallery">
+      <h2>Галерея эффектов</h2>
+      <div class="images">
+        <div class="image rotate-hover"></div>
+        <div class="image glow-hover"></div>
+        <div class="image flip-hover"></div>
+      </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="reviews">
+      <h2>Отзывы пользователей</h2>
+      <div class="review-list" id="reviewList">
+        <!-- Комментарии будут добавляться сюда -->
+      </div>
+    </section>
+
+    <!-- Форма -->
+    <section class="contact-form">
+      <h2>Связаться с нами</h2>
+      <form id="feedbackForm">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit" class="btn">Отправить</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p id="footerText">&copy; 2025. Все права защищены.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
